@@ -22,6 +22,12 @@
         .accent-gradient {
             background: linear-gradient(135deg, #8A7F7A 0%, #B46A55 100%);
         }
+        .gradient-text {
+            background: linear-gradient(135deg, #8A7F7A 0%, #B46A55 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
         .fade-in {
             opacity: 0;
             transform: translateY(20px);
@@ -40,90 +46,40 @@
 </head>
 <body class="bg-[#FDFDF6]">
     <!-- Coming Soon Banner -->
-    <div class="bg-[#B46A55] text-[#FDFDF6] py-2 text-center text-sm">
+    <div class="bg-[#B46A55] text-[#FDFDF6] py-3 text-center text-lg">
         <div class="container mx-auto px-4">
             <span class="inline-block animate-pulse">🚀 قريباً... Coming Soon...</span>
         </div>
     </div>
 
     <!-- Hero Section -->
-    <section class="light-gradient-bg text-[#2A2623] min-h-screen flex items-center border-b border-[#E8E2D9]">
+    <section class="light-gradient-bg text-[#2A2623] flex items-center border-b border-[#E8E2D9]">
         <div class="container mx-auto px-4 py-20">
-            <div class="max-w-4xl mx-auto text-center">
+            <div class="max-w-5xl mx-auto text-center">
                 <!-- Logo/Brand -->
-                <div class="fade-in mb-8">
-                    <h1 class="text-5xl md:text-6xl font-bold mb-4">Epistedia</h1>
-                    <div class="arabic text-3xl md:text-4xl font-bold mb-4">إبستيديا</div>
-                    <div class="w-24 h-1 bg-[#8A7F7A]/30 mx-auto"></div>
+                <div class="fade-in mb-12">
+                    <h1 class="text-6xl md:text-7xl font-bold mb-6">Epistedia</h1>
+                    <div class="arabic text-4xl md:text-5xl font-bold mb-6">إبستيديا</div>
+                    <div class="w-32 h-1.5 bg-[#8A7F7A]/30 mx-auto"></div>
                 </div>
 
                 <!-- Tagline -->
-                <div class="fade-in delay-1 mb-12">
-                    <p class="text-xl md:text-2xl text-[#5A524C] font-light leading-relaxed mb-6">
+                <div class="fade-in delay-1 mb-16">
+                    <p class="text-2xl md:text-3xl text-[#5A524C] font-light leading-relaxed mb-8">
                         Understanding Yourself, Building a Meaningful Life
                     </p>
-                    <p class="arabic text-xl md:text-2xl text-[#5A524C] font-light leading-relaxed">
+                    <p class="arabic text-2xl md:text-3xl text-[#5A524C] font-light leading-relaxed" dir="rtl">
                         فهم ذاتك، بناء حياة ذات معنى
                     </p>
                 </div>
 
                 <!-- Core Concept -->
-                <div class="fade-in delay-2 grid md:grid-cols-3 gap-8 mb-16">
-                    <div class="bg-white p-6 rounded-xl shadow-sm border border-[#E8E2D9]">
-                        <h3 class="text-lg font-semibold mb-3 text-[#8A7F7A]">Beyond Surface Understanding</h3>
-                        <p class="text-[#5A524C] text-sm">Moving past simplified explanations to deeper comprehension</p>
-                        <p class="arabic text-[#5A524C] text-sm mt-2">فهم يتجاوز السطح</p>
-                    </div>
-                    <div class="bg-white p-6 rounded-xl shadow-sm border border-[#E8E2D9]">
-                        <h3 class="text-lg font-semibold mb-3 text-[#8A7F7A]">Multiple Pathways</h3>
-                        <p class="text-[#5A524C] text-sm">Integrating specialized and accessible approaches to growth</p>
-                        <p class="arabic text-[#5A524C] text-sm mt-2">مسارات متعددة</p>
-                    </div>
-                    <div class="bg-white p-6 rounded-xl shadow-sm border border-[#E8E2D9]">
-                        <h3 class="text-lg font-semibold mb-3 text-[#8A7F7A]">Modern Context</h3>
-                        <p class="text-[#5A524C] text-sm">Understanding psychological experiences in today's world</p>
-                        <p class="arabic text-[#5A524C] text-sm mt-2">سياق معاصر</p>
-                    </div>
-                </div>
-
-                <!-- Visual Metaphor Placeholder -->
-                <div class="fade-in delay-2 mt-16 text-center">
-                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-[#E8E2D9]">
-                        <p class="text-lg text-[#5A524C] mb-6">"حيث تُفهم التجارب الإنسانية في عمقها"</p>
-                        <p class="text-lg text-[#8A7F7A] italic">"Where human experiences are understood in their depth"</p>
-                        
-                        <!-- Self-Understanding Visualization -->
-                        <div class="flex justify-center mt-8">
-                            <div class="relative">
-                                <!-- Central Self -->
-                                <div class="w-20 h-20 bg-[#8A9B8A] rounded-full flex items-center justify-center text-white font-bold shadow-lg">
-                                    الذات
-                                </div>
-                                
-                                <!-- Connected Aspects -->
-                                <div class="w-12 h-12 bg-[#B46A55] rounded-full absolute -top-4 -left-4 flex items-center justify-center text-white text-xs shadow">
-                                    الفهم
-                                </div>
-                                <div class="w-12 h-12 bg-[#8A7F7A] rounded-full absolute -bottom-4 -right-4 flex items-center justify-center text-white text-xs shadow">
-                                    النمو
-                                </div>
-                                <div class="w-10 h-10 bg-[#D4A9A9] rounded-full absolute top-4 -right-8 flex items-center justify-center text-white text-xs shadow">
-                                    المعنى
-                                </div>
-                                <div class="w-10 h-10 bg-[#A8C0CE] rounded-full absolute -top-8 right-4 flex items-center justify-center text-white text-xs shadow">
-                                    السياق
-                                </div>
-                                
-                                <!-- Connection Lines -->
-                                <div class="absolute w-20 h-1 bg-[#8A7F7A]/30 transform rotate-45 -top-2 -left-2"></div>
-                                <div class="absolute w-20 h-1 bg-[#8A7F7A]/30 transform -rotate-45 -bottom-2 -right-2"></div>
-                                <div class="absolute w-16 h-1 bg-[#8A7F7A]/30 transform rotate-20 top-2 -right-6"></div>
-                                <div class="absolute w-16 h-1 bg-[#8A7F7A]/30 transform -rotate-20 -top-6 right-2"></div>
-                            </div>
-                        </div>
-                        
-                        <p class="text-[#5A524C] text-sm mt-6">An integrated approach to self-understanding and personal growth</p>
-                        <p class="arabic text-[#5A524C] text-sm mt-2">نهج متكامل للفهم الذاتي والنمو الشخصي</p>
+                <div class="fade-in delay-2 max-w-3xl mx-auto">
+                    <div class="border-l-4 border-[#B46A55] pl-6 py-2">
+                        <p class="text-xl md:text-2xl font-light italic text-[#8A7F7A]">
+                            A sanctuary for self-encounter, bridging the clinical, philosophical, and psychological dimensions of mental health. 
+                            We help you build a meaningful life that can contain pain and still be whole.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -131,35 +87,35 @@
     </section>
 
     <!-- Problem/Solution Section -->
-    <section class="py-20 bg-white">
+    <section class="py-24 bg-white">
         <div class="container mx-auto px-4">
-            <div class="max-w-4xl mx-auto">
-                <div class="grid md:grid-cols-2 gap-12">
+            <div class="max-w-5xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-16">
                     <!-- Problem -->
                     <div class="fade-in">
-                        <h2 class="text-2xl font-bold text-gray-800 mb-6">The Challenge of True Understanding</h2>
-                        <div class="space-y-4 text-gray-600 mb-8">
-                            <p>Psychological concepts often get oversimplified in everyday conversations, creating a gap between academic knowledge and practical understanding.</p>
-                            <p>People receive fragmented information - either highly technical explanations or superficial advice that lacks depth and context.</p>
+                        <h2 class="text-3xl font-bold text-gray-800 mb-8">The Challenge of True Understanding</h2>
+                        <div class="space-y-6 text-gray-600 mb-12">
+                            <p class="text-lg">Psychological concepts often get oversimplified in everyday conversations, creating a significant gap between academic knowledge and practical understanding. This simplification leads to misconceptions about mental health, personal development, and human behavior.</p>
+                            <p class="text-lg">People receive fragmented information - either highly technical explanations that are difficult to apply or superficial advice that lacks depth and context. This creates confusion about how to approach personal growth and mental well-being effectively.</p>
                         </div>
-                        <h2 class="arabic text-2xl font-bold text-gray-800 mb-6">تحدي الفهم الحقيقي</h2>
-                        <div class="arabic space-y-4 text-gray-600">
-                            <p>المفاهيم النفسية غالباً ما تُبسَّط في النقاشات اليومية، مما يخلق فجوة بين المعرفة الأكاديمية والفهم العملي.</p>
-                            <p>يتلقى الناس معلومات مجزأة - إما تفسيرات تقنية أو نصائح سطحية تفتقر للعمق والسياق.</p>
+                        <h2 class="arabic text-3xl font-bold text-gray-800 mb-8" dir="rtl">تحدي الفهم الحقيقي</h2>
+                        <div class="arabic space-y-6 text-gray-600">
+                            <p class="text-lg" dir="rtl">المفاهيم النفسية غالباً ما تُبسَّط بشكل مفرط في النقاشات اليومية، مما يخلق فجوة كبيرة بين المعرفة الأكاديمية والفهم العملي. هذا التبسيط يؤدي إلى مفاهيم خاطئة حول الصحة النفسية والتطور الشخصي والسلوك البشري.</p>
+                            <p class="text-lg" dir="rtl">يتلقى الناس معلومات مجزأة - إما تفسيرات تقنية يصعب تطبيقها أو نصائح سطحية تفتقر للعمق والسياق. هذا يخلق ارتباكاً حول كيفية التعامل مع النمو الشخصي والرفاه النفسي بشكل فعال.</p>
                         </div>
                     </div>
 
                     <!-- Solution -->
                     <div class="fade-in delay-1">
-                        <h2 class="text-2xl font-bold text-gray-800 mb-6">Bridging Knowledge and Experience</h2>
-                        <div class="space-y-4 text-gray-600 mb-8">
-                            <p>Epistedia connects evidence-based knowledge with lived experience, offering both specialized insights and practical daily approaches.</p>
-                            <p>We recognize that psychological growth involves multiple dimensions - from neurological factors to spiritual well-being and social context.</p>
+                        <h2 class="text-3xl font-bold text-gray-800 mb-8">Bridging Knowledge and Experience</h2>
+                        <div class="space-y-6 text-gray-600 mb-12">
+                            <p class="text-lg">Epistedia connects evidence-based knowledge with lived experience, offering both specialized insights and practical daily approaches. We translate complex psychological concepts into understandable frameworks while preserving their depth and nuance.</p>
+                            <p class="text-lg">We recognize that psychological growth involves multiple dimensions - from neurological factors to spiritual well-being and social context. Our approach integrates these diverse perspectives to provide a more complete understanding of human psychology.</p>
                         </div>
-                        <h2 class="arabic text-2xl font-bold text-gray-800 mb-6">جسر بين المعرفة والتجربة</h2>
-                        <div class="arabic space-y-4 text-gray-600">
-                            <p>إبستيديا تربط المعرفة المبنية على الأدلة مع التجربة المعيشة، مقدمةً رؤى متخصصة وأساليب عملية.</p>
-                            <p>نعترف بأن النمو النفسي يشمل أبعاداً متعددة - من العوامل العصبية إلى الرفاه الروحي والسياق الاجتماعي.</p>
+                        <h2 class="arabic text-3xl font-bold text-gray-800 mb-8" dir="rtl">جسر بين المعرفة والتجربة</h2>
+                        <div class="arabic space-y-6 text-gray-600" dir="rtl">
+                            <p class="text-lg">إبستيديا تربط المعرفة المبنية على الأدلة مع التجربة المعيشة، مقدمةً رؤى متخصصة وأساليب عملية. نحن نترجم المفاهيم النفسية المعقدة إلى أطر مفهومة مع الحفاظ على عمقها وفروقاتها الدقيقة.</p>
+                            <p class="text-lg">نعترف بأن النمو النفسي يشمل أبعاداً متعددة - من العوامل العصبية إلى الرفاه الروحي والسياق الاجتماعي. نهجنا يدمج هذه المنظورات المتنوعة لتقديم فهم أكثر اكتمالاً للنفس البشرية.</p>
                         </div>
                     </div>
                 </div>
@@ -167,39 +123,146 @@
         </div>
     </section>
 
-    <!-- Three Dimensions Section -->
-    <section class="py-20 bg-[#FAF8F1]">
+    <!-- Our Philosophy Section -->
+    <section class="py-24 bg-[#FAF8F1]">
         <div class="container mx-auto px-4">
-            <div class="max-w-4xl mx-auto text-center">
-                <h2 class="text-3xl font-bold text-gray-800 mb-4 fade-in">Dimensions of Self-Understanding</h2>
-                <h2 class="arabic text-3xl font-bold text-gray-800 mb-12 fade-in">أبعاد الفهم الذاتي</h2>
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-light mb-4 text-center fade-in gradient-text">Our Philosophy</h2>
+                <h2 class="arabic text-4xl font-light mb-16 text-center fade-in gradient-text" dir="rtl">فلسفتنا</h2>
                 
                 <div class="grid md:grid-cols-3 gap-8">
                     <div class="fade-in delay-1 bg-white p-8 rounded-xl shadow-sm border border-[#E8E2D9]">
-                        <div class="w-16 h-16 rounded-full bg-[#A8C0CE] flex items-center justify-center text-white font-bold text-lg mb-4 mx-auto">
-                            Scientific
+                        <div class="w-16 h-16 rounded-full bg-[#8A9B8A] flex items-center justify-center mb-6 mx-auto">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                            </svg>
                         </div>
-                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Evidence-Based Foundation</h3>
-                        <p class="text-gray-600 mb-4">Understanding psychological phenomena through research, neuroscience, and clinical evidence while appreciating individual differences.</p>
-                        <p class="arabic text-gray-600 text-sm">فهم الظواهر النفسية عبر البحث والعلم العصبي مع تقدير الاختلافات الفردية.</p>
+                        <h3 class="text-2xl font-medium mb-4 text-[#8A7F7A] text-center">The Ecology of Emotion</h3>
+                        <p class="text-gray-600 text-lg text-center">What you're feeling is not a bug, it's a feature. Learn the language of your inner world before you try to silence it.</p>
+                        <p class="arabic text-gray-600 text-lg text-center mt-4" dir="rtl">ما تشعر به ليس خللاً، بل ميزة. تعلم لغة عالمك الداخلي قبل أن تحاول إسكاته.</p>
                     </div>
                     
                     <div class="fade-in delay-2 bg-white p-8 rounded-xl shadow-sm border border-[#E8E2D9]">
-                        <div class="w-16 h-16 rounded-full bg-[#8A9B8A] flex items-center justify-center text-white font-bold text-lg mb-4 mx-auto">
-                            Practical
+                        <div class="w-16 h-16 rounded-full bg-[#B46A55] flex items-center justify-center mb-6 mx-auto">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
                         </div>
-                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Everyday Integration</h3>
-                        <p class="text-gray-600 mb-4">Tools and practices that support psychological well-being through lifestyle factors, mindfulness, and daily habits.</p>
-                        <p class="arabic text-gray-600 text-sm">أدوات وعادات تدعم الرفاه النفسي عبر عوامل نمط الحياة واليقظة.</p>
+                        <h3 class="text-2xl font-medium mb-4 text-[#8A7F7A] text-center">A Bridge, Not a Platform</h3>
+                        <p class="text-gray-600 text-lg text-center">Translating between the clinical, philosophical, and psychological languages that have forgotten how to speak to one another.</p>
+                        <p class="arabic text-gray-600 text-lg text-center mt-4" dir="rtl">ترجمة بين اللغات السريرية والفلسفية والنفسية التي نسيت كيف تتحدث مع بعضها البعض.</p>
                     </div>
                     
                     <div class="fade-in delay-3 bg-white p-8 rounded-xl shadow-sm border border-[#E8E2D9]">
-                        <div class="w-16 h-16 rounded-full bg-[#D4A9A9] flex items-center justify-center text-white font-bold text-lg mb-4 mx-auto">
-                            Contextual
+                        <div class="w-16 h-16 rounded-full bg-[#8A7F7A] flex items-center justify-center mb-6 mx-auto">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg>
                         </div>
-                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Broader Perspective</h3>
-                        <p class="text-gray-600 mb-4">Understanding how cultural, spiritual, and social factors shape psychological experiences and personal growth.</p>
-                        <p class="arabic text-gray-600 text-sm">فهم تأثير العوامل الثقافية والروحية والاجتماعية على التجارب النفسية.</p>
+                        <h3 class="text-2xl font-medium mb-4 text-[#8A7F7A] text-center">A Dojo for the Mind</h3>
+                        <p class="text-gray-600 text-lg text-center">Interactive practice rooms for critical thinking, narrative repair, and the reintegration of disowned parts of yourself.</p>
+                        <p class="arabic text-gray-600 text-lg text-center mt-4" dir="rtl">غرف ممارسة تفاعلية للتفكير النقدي وإصلاح السرد وإعادة دمج الأجزاء المهملة من ذاتك.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Three Pillars Section -->
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-4xl font-light mb-4 text-center fade-in gradient-text">The Three Pillars</h2>
+                <h2 class="arabic text-4xl font-light mb-16 text-center fade-in gradient-text">الركائز الثلاث</h2>
+                
+                <div class="space-y-16">
+                    <div class="flex flex-col md:flex-row gap-10 items-center">
+                        <div class="md:w-1/3 flex justify-center">
+                            <div class="w-28 h-28 rounded-full bg-[#A8C0CE] flex items-center justify-center text-white text-xl font-medium">
+                                The Clinic
+                            </div>
+                        </div>
+                        <div class="md:w-2/3">
+                            <h3 class="text-2xl font-medium mb-4 text-[#8A7F7A]">Evidence-Based Understanding</h3>
+                            <p class="text-gray-600 text-lg mb-6">Authoritative, clear information on clinical conditions, their neurobiology, and established treatment pathways. We incorporate the "Ecology of Emotion" perspective, reframing symptoms as signals rather than mere malfunctions.</p>
+                            <ul class="text-gray-600 text-lg list-disc pl-6 space-y-2">
+                                <li>Clinical depression & anxiety disorders</li>
+                                <li>Trauma (PTSD) & OCD</li>
+                                <li>Neurobiology made accessible</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-col md:flex-row gap-10 items-center">
+                        <div class="md:w-1/3 flex justify-center order-2 md:order-1">
+                            <div class="w-28 h-28 rounded-full bg-[#8A9B8A] flex items-center justify-center text-white text-xl font-medium">
+                                Practice Rooms
+                            </div>
+                        </div>
+                        <div class="md:w-2/3 order-1 md:order-2">
+                            <h3 class="text-2xl font-medium mb-4 text-[#8A7F7A]">Interactive Tools for Growth</h3>
+                            <p class="text-gray-600 text-lg mb-6">A "dojo for the mind" with guided, interactive exercises to develop mental skills and work with your inner world in practical ways.</p>
+                            <ul class="text-gray-600 text-lg list-disc pl-6 space-y-2">
+                                <li>Room of Critical Thinking</li>
+                                <li>Room of Narrative Repair</li>
+                                <li>Room of Re-integration</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-col md:flex-row gap-10 items-center">
+                        <div class="md:w-1/3 flex justify-center">
+                            <div class="w-28 h-28 rounded-full bg-[#D4A9A9] flex items-center justify-center text-white text-xl font-medium">
+                                The Context
+                            </div>
+                        </div>
+                        <div class="md:w-2/3">
+                            <h3 class="text-2xl font-medium mb-4 text-[#8A7F7A]">Philosophical & Cultural Depth</h3>
+                            <p class="text-gray-600 text-lg mb-6">Exploring the "why" of suffering beyond diagnosis. Essays on meaning, resilience, identity, and the human condition that help frame personal struggles within a larger context.</p>
+                            <ul class="text-gray-600 text-lg list-disc pl-6 space-y-2">
+                                <li>Philosophy of resilience</li>
+                                <li>Cultural perspectives on mental health</li>
+                                <li>Psychological expressions of human experience</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Visual Metaphor Placeholder -->
+                <div class="fade-in delay-2 mt-16 text-center">
+                    <div class="bg-white p-10 rounded-2xl shadow-sm border border-[#E8E2D9]">
+                        <p class="text-xl text-[#5A524C] mb-8" dir="rtl">"حيث تُفهم التجارب الإنسانية في عمقها وتُبنى الحياة بمعنى أعمق"</p>
+                        <p class="text-xl text-[#8A7F7A] italic mb-10">"Where human experiences are understood in their depth and life is built with deeper meaning"</p>
+                        
+                        <!-- Self-Understanding Visualization -->
+                        <div class="flex justify-center mt-10">
+                            <div class="relative">
+                                <!-- Central Self -->
+                                <div class="w-24 h-24 bg-[#8A9B8A] rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg">
+                                    الذات
+                                </div>
+                                
+                                <!-- Connected Aspects -->
+                                <div class="w-16 h-16 bg-[#B46A55] rounded-full absolute -top-6 -left-6 flex items-center justify-center text-white text-sm shadow">
+                                    الفهم
+                                </div>
+                                <div class="w-16 h-16 bg-[#8A7F7A] rounded-full absolute -bottom-6 -right-6 flex items-center justify-center text-white text-sm shadow">
+                                    النمو
+                                </div>
+                                <div class="w-14 h-14 bg-[#D4A9A9] rounded-full absolute top-6 -right-10 flex items-center justify-center text-white text-sm shadow">
+                                    المعنى
+                                </div>
+                                <div class="w-14 h-14 bg-[#A8C0CE] rounded-full absolute -top-10 right-6 flex items-center justify-center text-white text-sm shadow">
+                                    السياق
+                                </div>
+                                
+                                <!-- Connection Lines -->
+                                <div class="absolute w-24 h-1.5 bg-[#8A7F7A]/30 transform rotate-45 -top-3 -left-3"></div>
+                                <div class="absolute w-24 h-1.5 bg-[#8A7F7A]/30 transform -rotate-45 -bottom-3 -right-3"></div>
+                                <div class="absolute w-20 h-1.5 bg-[#8A7F7A]/30 transform rotate-20 top-3 -right-8"></div>
+                                <div class="absolute w-20 h-1.5 bg-[#8A7F7A]/30 transform -rotate-20 -top-8 right-3"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -207,40 +270,41 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="py-20 bg-gray-900 text-white">
+    <section class="py-24 bg-gray-900 text-white">
         <div class="container mx-auto px-4 text-center">
-            <div class="max-w-2xl mx-auto">
-                <h2 class="text-3xl font-bold mb-6 fade-in">Ready to Deepen Your Self-Understanding?</h2>
-                <h2 class="arabic text-3xl font-bold mb-6 fade-in">مستعد لتعميق فهمك الذاتي؟</h2>
-                <p class="text-gray-400 mb-8 fade-in delay-1">Be the first to know when we launch.</p>
-                <p class="arabic text-gray-400 mb-8 fade-in delay-1">كن أول من يعلم عند إطلاقنا.</p>
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl font-bold mb-8 fade-in">Ready to Deepen Your Self-Understanding?</h2>
+                <h2 class="arabic text-4xl font-bold mb-8 fade-in" dir="rtl">مستعد لتعميق فهمك الذاتي؟</h2>
+                <p class="text-xl text-gray-400 mb-10 fade-in delay-1">Join our community and be the first to access our resources when we launch. We're creating a space for meaningful exploration of psychology, personal growth, and the art of living well.</p>
+                <p class="arabic text-xl text-gray-400 mb-10 fade-in delay-1" dir="rtl">انضم إلى مجتمعنا وكن أول من يصل إلى مواردنا عند الإطلاق. نحن نخلق مساحة للاستكشاف الهادف لعلم النفس والنمو الشخصي وفن العيش الجيد.</p>
                 
                 <!-- Email Signup -->
-                <div class="fade-in delay-2 max-w-md mx-auto">
+                <div class="fade-in delay-2 max-w-2xl mx-auto">
                     <div class="flex flex-col sm:flex-row gap-4">
                         <input 
                             type="email" 
                             placeholder="Enter your email" 
-                            class="flex-1 px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 text-white placeholder-gray-400 focus:outline-none focus:border-[#B46A55]"
+                            class="flex-1 px-5 py-4 rounded-lg bg-gray-800 border border-gray-700 text-white placeholder-gray-400 focus:outline-none focus:border-[#B46A55] text-lg"
                         >
-                        <button class="px-6 py-3 bg-[#B46A55] hover:bg-[#A35A45] rounded-lg font-medium transition-colors duration-200">
+                        <button class="px-8 py-4 bg-[#B46A55] hover:bg-[#A35A45] rounded-lg font-medium text-lg transition-colors duration-200">
                             Notify Me
                         </button>
                     </div>
-                    <p class="text-gray-500 text-sm mt-3">No spam, just one email when we're ready.</p>
-                    <p class="arabic text-gray-500 text-sm mt-2">لا بريد مزعج، فقط إشعار واحد عند الإطلاق.</p>
+                    <p class="text-gray-500 text-base mt-4">No spam, just one email when we're ready. We respect your privacy and inbox.</p>
+                    <p class="arabic text-gray-500 text-base mt-3" dir="rtl">لا بريد مزعج، فقط إشعار واحد عند الإطلاق. نحترم خصوصيتك وصندوق الوارد الخاص بك.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-950 text-gray-400 py-8">
+    <footer class="bg-gray-950 text-gray-400 py-10">
         <div class="container mx-auto px-4 text-center">
-            <p class="mb-2">&copy; 2024 Epistedia. Understanding Yourself, Building a Meaningful Life.</p>
-            <p class="arabic mb-4">إبستيديا. فهم ذاتك، بناء حياة ذات معنى.</p>
-            <div class="flex justify-center space-x-6 text-sm">
-                <a href="#" class="hover:text-white transition-colors">Email</a>
+            <p class="mb-3 text-lg">&copy; 2025 Epistedia. Understanding Yourself, Building a Meaningful Life.</p>
+            <p class="arabic mb-5 text-lg" dir="rtl">إبستيديا. فهم ذاتك، بناء حياة ذات معنى.</p>
+            <div class="flex justify-center space-x-8 text-base">
+                <a href="mailto:hamza@boukhtam.com" class="hover:text-white transition-colors">Email: hamza@boukhtam.com</a>
+                <a href="https://wa.me/213550877577" class="hover:text-white transition-colors">WhatsApp: +213 550 877 577</a>
                 <a href="#" class="hover:text-white transition-colors">Privacy</a>
                 <a href="#" class="hover:text-white transition-colors">Terms</a>
             </div>
